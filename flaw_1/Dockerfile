@@ -5,3 +5,5 @@ WORKDIR /webserver
 RUN npm install package.json
 
 CMD [ "/bin/sh", "-c", "node index.js" ]
+
+EXPOSE 3000
