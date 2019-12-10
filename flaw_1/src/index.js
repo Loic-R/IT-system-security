@@ -12,14 +12,14 @@ app.use(cors());
 
 // Enable bodyParser.
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
 
 //Set API routes
 const api = require('./api/');
 app.use('/api',api);
 
 // Static path to dist to serve the front end files.
-app.use(express.static(path.join(__dirname, '/dist')));
+app.use(express.static(path.join(__dirname, '/front/dist/front/')));
 
 // Set app port.
 const port = process.env.PORT || '3000';
