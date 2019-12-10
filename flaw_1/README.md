@@ -8,7 +8,7 @@ If you've just installed docker, don't forget to run the docker daemon.
 ## Set up the docker environment
 ```bash
 # Build the container
-sudo docker build -t ctnFlaw
+sudo docker build . -t flaw
 
 # Launch the container
 sudo docker run -d --name ctnFlaw flaw
