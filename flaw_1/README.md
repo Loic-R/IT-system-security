@@ -3,7 +3,7 @@
 ## Requirements
 - Docker
 
-If you've just installed docker, don't forget to run the docker daemon. 
+If you've just installed docker, don't forget to run the docker daemon using the command `dockerd`. 
 
 ## Set up the docker environment
 ```bash
