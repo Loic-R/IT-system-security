@@ -5,14 +5,15 @@
 
 If you've just installed docker, don't forget to run the docker daemon using the command `dockerd`. 
 
-## Set up the docker environment
+## Build the docker
 ```bash
-# Build the container
-sudo docker build . -t flaw
-
-# Launch the container
-sudo docker run -d -p 3000:3000 --name ctnFlaw flaw
-
-# Connect to the docker
-sudo docker exec -t -i ctnFlaw /bin/bash
+docker build -t flaw .
 ```
+
+## Run the container
+```bash
+docker run -p 3000:3000 --name ctnFlaw flaw
+```
+
+## Use the environement
+Connect to `localhost:3000`
