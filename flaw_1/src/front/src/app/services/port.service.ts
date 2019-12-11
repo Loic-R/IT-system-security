@@ -10,7 +10,7 @@ export class PortService {
 
   constructor(private http: HttpClient) { }
 
-  public getFreePorts(range: String) : Observable<String[]> {
-    return this.http.post<String[]>(environment.api + '/ports', range);
+  public getFreePorts(range: string) : Observable<string[]> {
+    return this.http.post<string[]>(environment.api + '/ports', { "ports": range });
   }
 }

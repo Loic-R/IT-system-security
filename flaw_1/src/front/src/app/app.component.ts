@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
 export class AppComponent {
 
 
-  freePorts : String[];
-  range: String;
+  freePorts : string[];
+  range: string;
 
   constructor(public portService: PortService) {
 
