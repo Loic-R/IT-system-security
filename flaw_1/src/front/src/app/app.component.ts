@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PortService } from './services/port.service';
 import { Observable } from 'rxjs';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
 
 
-  freePorts : string[];
+  freePorts : string[] = [];
   range: string;
 
   constructor(public portService: PortService) {
