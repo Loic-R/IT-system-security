@@ -20,9 +20,9 @@ export class AppComponent {
 
   public submit() {
     this.portService.getFreePorts(this.range).subscribe((res) => {
-      res.freePorts.forEach((port) => {
-        this.freePorts.push(port);
-      });
+     
+      this.freePorts = res.freePorts;
+      
     });
   }
 

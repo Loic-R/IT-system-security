@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
         }
         else {
             for (let item in report) {
-                freePorts.push(item);
+                freePorts.push(JSON.stringify(report[item]));
             }
         }
         
