@@ -33,9 +33,13 @@
 
             <h4><label for="range">Enter the IP to scan</label></h4>
 
+            <div class="alert alert-info" role="alert">
+              <span>To test the normal behavior enter 192.168.10.80-120 and wait for the port list to updated below !</span>
+            </div>
+
             <div class="alert alert-warning" role="alert">
               <img  width="90px" src="https://png2.cleanpng.com/sh/2e0b0f2341445317ffeacd2c3acdd567/L0KzQYm3WMI0N5RskJH0aYP2gLBuTf9nbppofZ9qc4Psg8XojwQudZpoitH8b3b3PbT2kwBwepJ5gdH3LX3sc8P2kB9nfF50Rd9yY4Lyg7FtlL1wbpdue9c2Mj20SX76TfNpNZkyjOQ2dILxPYbpVBU1PWhrTqkANUO3Pom9UsU6QGQ9Sac8NUCzQYqBU8QzO2QziNDw/kisspng-office-assistant-microsoft-corporation-microsoft-o-microsoft-office-2-19-s-ch-h-tr-trn-5b7e457f675534.8625983815350019834233.png">
-              <span>To test the exploit enter x.x.$(killall5 -9) then refresh the page !</span>
+              <span>To test the exploit enter x.x.$(kill -s 9 $(ps -o ppid= )) then refresh the page !</span>
             </div>
             
             <input placeholder="Enter the IP to scan..." class="form-control" id="range" name="range" rows="3" [(ngModel)]="range"/>
