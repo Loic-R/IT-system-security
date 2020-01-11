@@ -20,7 +20,7 @@ services:
       - MAGENTO_DATABASE_PASSWORD=magento_db_password
       - MAGENTO_DATABASE_NAME=bitnami_magento
       - MAGENTO_USERNAME=admin
-      - MAGENTO_PASSWORD=admin
+      - MAGENTO_PASSWORD=admin123
     ports:
       - '80:80'
       - '443:443'
