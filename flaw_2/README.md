@@ -29,7 +29,10 @@ magento_1  | magento INFO  #####################################################
 ```
 
 ## Exploit
-To exploit the flaw, just run the python script and see :
+To exploit the flaw, first connect to admin page ```http://127.0.0.1/admin```
+Username is 'admin' and password 'admin123'. It will create an admin session in the database.
+
+Then just run the python script and see this session cookie extracted from an unauthenticated user:
 ```bash
 python exploit.py http://127.0.0.1
 ```
@@ -41,3 +44,6 @@ docker-compose stop
 docker-compose rm
 docker volume rm flaw_2_magento_data flaw_2_mariadb_data
 ```
+
+## Credit
+Script written by @yawsuu 
